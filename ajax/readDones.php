@@ -1,10 +1,6 @@
 <?php
 // Design initial table header 
-$data_done = '<table class="table table-bordered table-striped">
-						<tr>
-							<th>Task</th>
-							<th>Delete</th>
-						</tr>';
+$data_done = '<table class="table table-bordered table-striped">';
 
 $file = "../done.txt";
 $no_of_lines = count(file($file));
@@ -16,8 +12,9 @@ while($no_of_lines > $count) {
         $count++;
         $data_done .= '<strike> 
             <tr>
+                <td><button onclick="deleteDone('.$count.')" class="btn btn-link">✔️</button></td>
 				<td><strike>'.$result.'</strike></td>
-                <td><button onclick="deleteDone('.$count.')" class="btn btn-danger">Delete</button></td>
+                <td><button onclick="deleteDone('.$count.')" class="btn btn-outline-danger">Delete</button></td>
             </tr>
             </strike>';
     }

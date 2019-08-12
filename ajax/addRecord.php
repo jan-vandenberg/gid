@@ -9,5 +9,4 @@
         fwrite($myfile, $txt);
         fclose($myfile);
 	}
-
 ?>

@@ -10,7 +10,7 @@ if(isset($_POST['id']) && isset($_POST['id']) != "")
     $dones = file($task_file); 
     $done = $dones[$task_id-1]; 
     $done_file = '../done.txt';
-    $date = date('Ymd');
+    $date = date('Y-m-d');
     $current = 'x'. " " . $date . " " .  $done . file_get_contents($done_file);
     file_put_contents($done_file, $current);
 

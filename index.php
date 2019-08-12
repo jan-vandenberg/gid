@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Get it done!</title>
     <!-- Bootstrap CSS File  -->
     <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css"/>
@@ -12,21 +13,21 @@
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-md-12">
-            <h1>Get it done!</h1>
+            <h3>Get it done!</h3>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
         <form class="input-group">
-            <input class="form-control" autofocus="autofocus" type="text" id="todo" placeholder="Add new task">
-            <button type="submit" class="btn btn-primary" onclick="addRecord()">Add Task</button>
+            <input class="form-control" autofocus="autofocus" type="text" id="todo" placeholder="Add new task and press enter!">
+            <input class="btn btn-outline-primary" type="submit" onclick="addRecord()" value="Add">
         </form>
         </div>
     </div>
 <br>
     <div class="row">
         <div class="col-md-12">
-            <h3>Tasks</h3>
+            <h3>Open</h3>
             <div class="records_content"></div>
         </div>
     </div>
