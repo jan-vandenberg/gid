@@ -4,9 +4,7 @@
 This is really simple ToDo (or task) manager built with PHP, jQuery and Bootstrap.
 
 This is what it looks like.
-![Gid image](https://piks.nl/upload/upload/gid/gid.png)
 
-And this is it in action.
 ![Gid gif](https://piks.nl/upload/upload/gid/gid.gif) 
 
 #### Why?
