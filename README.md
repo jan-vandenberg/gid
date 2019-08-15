@@ -1,17 +1,17 @@
 # gid - Get It Done!
 
 ### Simple self-contained and selfhosted todo or task manager.
-This is really simple ToDo (or task) manager built with PHP, jQuery and Bootstrap.
+This is a really simple ToDo (or task) manager built with PHP, jQuery and Bootstrap.
 
 This is what it looks like.
 
-![Gid gif](https://piks.nl/upload/upload/gid/gid.gif) 
+![Gid gif](https://piks.nl/upload/upload/gid/gid.new.gif) 
 
 #### Why?
 I was looking for a ToDo or task manager that was:
 1. Self hosted
 2. Self contained
-3. Uses a plaintext file
+3. Uses a plain text file
 4. Mobile friendly
 5. Able to track / see DONE items
 

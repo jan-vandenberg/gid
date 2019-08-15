@@ -18,9 +18,8 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-        <form class="input-group">
+        <form class="input-group" action="javascript:addRecord()">
             <input class="form-control" autofocus="autofocus" type="text" id="todo" placeholder="Add new task and press enter!">
-            <input class="btn btn-outline-primary" type="submit" onclick="addRecord()" value="Add">
         </form>
         </div>
     </div>

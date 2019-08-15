@@ -2,20 +2,19 @@
 	// Design initial table header 
 	$data = '<table class="table table-bordered table-striped">';
 
-$file = "../todo.txt";
-$no_of_lines = count(file($file));
-$lines = file($file);
+    $file = "../todo.txt";
+    $no_of_lines = count(file($file));
+    $lines = file($file);
 
-$count = 0;
-while($no_of_lines > $count) {
+    $count = 0;
+    while($no_of_lines > $count) {
         $result = $lines[$count]; 
         $count++;
       
         $data .= '<tr>
-            
                 <td><button onclick="doneTask('.$count.')" class="btn btn-outline-success">⠀</button></td>
 				<td>'.$result.'</td>
-    		</tr>';
+    		    </tr>';
     }
 
     $data .= '</table>';

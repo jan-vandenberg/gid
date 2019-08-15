@@ -1,17 +1,17 @@
-// Add Record
 function addRecord() {
     // get values
     var todo = $("#todo").val();
-
     // Add record
     $.post("ajax/addRecord.php", {
         todo: todo
-    }, function (data, status) {
+        }, 
+        function (data, status) {
         // read records again
-        readRecords();
-        // clear fields from the popup
-        $("#todo").val("");
-    });
+            $("#todo").val("");
+            readRecords();
+            readDones();
+        }
+    );
 }
 
 // Read tasks
@@ -70,7 +70,7 @@ function deleteDone(id) {
 }
 
 $(document).ready(function () {
-    // READ tasks and done on page load
+    // Read tasks and dones on page load
     readRecords();
     readDones();
 });
