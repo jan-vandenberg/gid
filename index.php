@@ -6,9 +6,9 @@
     <title>Get it done!</title>
     <!-- Bootstrap CSS File  -->
     <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css"/>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
