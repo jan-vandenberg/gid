@@ -6,6 +6,9 @@
     <title>Get it done!</title>
     <!-- Bootstrap CSS File  -->
     <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
@@ -19,7 +22,7 @@
     <div class="row">
         <div class="col-md-12">
         <form class="input-group" action="javascript:addRecord()">
-            <input class="form-control" autofocus="autofocus" type="text" id="todo" placeholder="Add new task and press enter!">
+            <input class="form-control" autofocus="autofocus" type="text" id="todo" placeholder="Add a new task and press enter!">
         </form>
         </div>
     </div>

@@ -1,5 +1,4 @@
 function addRecord() {
-    // get values
     var todo = $("#todo").val();
     // Add record
     $.post("ajax/addRecord.php", {

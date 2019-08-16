@@ -1,5 +1,5 @@
 <?php
-	if(isset($_POST['todo']))
+	if(isset($_POST['todo']) && $_POST['todo'] != "")
     {
 		// get values 
 		$todo = $_POST['todo'];
@@ -8,5 +8,8 @@
         $txt = $todo."\n";
         fwrite($myfile, $txt);
         fclose($myfile);
-	}
+    }
+    else {
+        return false;
+    }
 ?>
