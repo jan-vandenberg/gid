@@ -3,9 +3,9 @@
 ### Simple self-contained and selfhosted todo or task manager.
 This is a *really* simple ToDo (or task) manager built with PHP, jQuery and Bootstrap.
 
-This is what it looks like.
+This is what it looks like (with a darkmode toggle).
 
-![Gid gif](https://piks.nl/upload/upload/gid/gid.new.gif) 
+![Gid gif](https://piks.nl/upload/upload/gid/gid-dark.gif) 
 
 #### Why?
 I was looking for a ToDo or task manager that was:
@@ -21,6 +21,8 @@ I was looking for a ToDo or task manager that was:
 3. No database setup/connection necessary. Gid writes to a plaintext file that can be moved and editted by hand if needed (like todotxt.org).
 4. Works and looks decent on a smartphone.
 5. DONE items are still visible with a strikethrough.
+
+There is the option to add an email address (or list of addresses seperated by comma); new tasks will emailed to these addresses. This depends on PHP mmail() function.
 
 #### Installation
 Just drop/unpack the folder anywhere on your PHP server and you're pretty much good to go (check your file ownership and permissions).
