@@ -1,15 +1,16 @@
 <?php
+include "config.inc.php";
 if(isset($_POST['id']) && isset($_POST['id']) != "")
 {
     // Get task id
     $task_id = $_POST['id'];
     $remove = array($task_id);
-    $task_file = "../todo.txt"; 
+    $task_file = $todotxt; 
 
     // Add done task to top of done.txt file
     $dones = file($task_file); 
     $done = $dones[$task_id-1]; 
-    $done_file = '../done.txt';
+    $done_file = $donetxt;
     $date = date('Y-m-d');
     $current = 'x'. " " . $date . " " .  $done . file_get_contents($done_file);
     file_put_contents($done_file, $current);

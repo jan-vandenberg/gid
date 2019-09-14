@@ -6,7 +6,7 @@ if(isset($_POST['id']) && isset($_POST['id']) != "")
     $task_id = $_POST['id'];
     $remove = array($task_id);
 
-    $myfile = '../todo.txt';
+    $myfile = '../txt/todo.txt';
     $lines = file($myfile);
 
      $lines = array_filter($lines, function($lineNumber) use ($remove) {

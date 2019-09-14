@@ -1,3 +1,34 @@
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+       var stylesheet = document.getElementById("stylesheet");
+       stylesheet.setAttribute('href', "css/bootstrap.darkly.min.css");
+       localStorage.setItem('theme', 'dark');
+
+    }
+    else {
+        var stylesheet = document.getElementById('stylesheet');
+        stylesheet.setAttribute('href', 'css/bootstrap.min.css');
+        localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+        stylesheet.setAttribute('href', "css/bootstrap.darkly.min.css");
+}
+
+if (currentTheme === 'light') {
+        toggleSwitch.checked = false;
+        stylesheet.setAttribute('href', "css/bootstrap.min.css");
+}
+
+
 function addRecord() {
     var todo = $("#todo").val();
     // Add record
@@ -25,6 +56,23 @@ function readDones() {
     $.get("ajax/readDones.php", {}, function (data, status) {
         $(".done_content").html(data);
     });
+}
+
+// Read dones
+function readMailcontact() {
+    $.get("ajax/readMailcontact.php", { }, function (data, status) {
+        $("#mail").val(data);
+    });
+        $("#myModal").modal("show");
+}
+
+function saveMailcontact() {
+    var mail = $("#mail").val();
+    $.post("ajax/saveMailcontact.php", {
+        mail: mail
+        } 
+    );
+
 }
 
 function doneTask(id) {

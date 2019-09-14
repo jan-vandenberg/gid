@@ -1,4 +1,5 @@
 <?php
+include "config.inc.php";
 // check request
 if(isset($_POST['id']) && isset($_POST['id']) != "")
 {
@@ -6,7 +7,7 @@ if(isset($_POST['id']) && isset($_POST['id']) != "")
     $task_id = $_POST['id'];
     $remove = array($task_id);
 
-    $myfile = '../done.txt';
+    $myfile = $donetxt;
     $lines = file($myfile);
 
      $lines = array_filter($lines, function($lineNumber) use ($remove) {

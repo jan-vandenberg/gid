@@ -2,7 +2,7 @@
 	// Design initial table header 
 	$data = '<table class="table table-bordered table-striped">';
 
-    $file = "../todo.txt";
+    $file = "../txt/todo.txt";
     $no_of_lines = count(file($file));
     $lines = file($file);
 
