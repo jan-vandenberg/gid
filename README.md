@@ -5,7 +5,7 @@ This is a *really* simple ToDo (or task) manager built with PHP, jQuery and Boot
 
 This is what it looks like (with a darkmode toggle).
 
-![Gid gif](https://piks.nl/upload/upload/gid/gid-dark.gif) 
+![Gid gif](https://piks.nl/upload/upload/gid/gid-dark-desktop.gif) 
 
 #### Why?
 I was looking for a ToDo or task manager that was:
